@@ -1,0 +1,74 @@
+Requisitos mínimos
+El alumno debe desarrollar un juego de tipo plataformas 2D con Unity. 
+Super Mario, Metroid, Castlevania o MegaMan.
+Mecánicas básicas como correr, saltar, atacar y recibir daño de enemigos o de elementos del escenario. 
+El juego contará con varios niveles, y en ellos distintos tipos de ítems, enemigos, plataformas y elementos interactivos. 
+El objetivo del jugador será llegar desde el principio del nivel hasta el final sin perder todas sus vidas. En función de las mecánicas avanzadas implementadas, el juego tendrá componentes de plataformas, disparos o exploración.
+Requisitos mínimos:
+• Menú principal: Al lanzar el juego se debe mostrar una escena de menú principal que muestre una imagen de fondo y un botón que lance el selector de niveles.
+• Héroe: El juego estará protagonizado por un héroe. El héroe tendrá las siguientes mecánicas básicas: correr, saltar y recibir daño. El héroe también tendrá una mecánica de ataque principal que podrá utilizar de forma ilimitada, como ataque con salto, ataque con disparo o ataque con arma cuerpo a cuerpo.
+• Cámara con límites: La cámara del juego seguirá al héroe durante su movimiento por el
+escenario. La cámara no se moverá mientras el jugador esté dentro de unos límites alrededor
+del centro de la pantalla. Cuando el jugador se fuese a desplazar fuera de esos límites, la
+cámara se desplazará en la dirección indicada para mantenerlo dentro de los límites.
+• Elementos del nivel: Cada nivel estará compuesto por bloques, plataformas y distintos
+elementos interactivos que el jugador pueda activar, romper, recibir daño o interactuar de
+alguna otra manera.
+• Enemigo: Cada nivel estará habitado por enemigos que tratarán de dañar al héroe. Cada
+enemigo tendrá un patrón de movimiento y/o habilidades que lo distinguirán del resto. Los
+patrones de movimiento deberán implementarse, al menos en parte, mediante animaciones de
+Unity o mediante DOTween.
+• Power-ups: Durante el juego el héroe podrá recoger power-ups. Los power-ups tendrán un
+efecto positivo sobre el héroe, ya sea instantáneo, temporal o permanente, como recuperar
+vida, hacerse invulnerable temporalmente o desbloquear un nuevo tipo de arma o movimiento.
+• Check-points y meta: Cada nivel contará con al menos un checkpoint que servirá al héroe
+como punto de resurrección en caso de que muera. El checkpoint quedará activado cuando el
+héroe lo toque. Al final de cada nivel habrá un punto de meta.
+• Game over: Cuando el personaje principal se quede sin vida o llegue a la meta, deberá
+aparecer una nueva escena con una pantalla de game over, similar a la del menú principal, pero con un título que indique si el jugador ha ganado o ha perdido, y botones o textos explicativos para reintentar (solo en caso de haber perdido) o volver al menú principal (en ambos casos).
+• Audio: El juego debe contar al menos con 5 sonidos para las distintas acciones del juego y 1 música o sonido ambiente de fondo.
+Requisitos adicionales
+Además de los requisitos mínimos, se proponen los siguientes requisitos adicionales con los que se puede aprobar la práctica y obtener una mejor calificación. El alumno puede implementar las que quiera, y obtendrá una calificación extra por cada una que se haya implementado correctamente. Los requisitos adicionales son:
+• Cambio de ambientación: El alumno modificará los gráficos del proyecto realizado en clase,
+configurando adecuadamente las texturas y animaciones de personajes, enemigos, armas,
+partículas y entorno para darle personalidad propia a su juego. Los recursos artísticos pueden ser de elaboración propia, o descargarse de cualquier fuente. Algunas webs donde pueden obtenerse recursos 2D gratuitos son:
+• https://kenney.nl/assets
+• https://github.com/sparklinlabs/superpowers-asset-packs
+• https://craftpix.net/freebies/
+• http://www.gameart2d.com/freebies.html
+Calificación: Hasta +1 puntos
+• Mecánica de movimiento adicional: El personaje principal tendrá una mecánica de
+movimiento distinta a las implementadas en clase, como salto doble, salto en pared, caída
+rápida con golpe, dash o dash aéreo. Esta podrá estar disponibles desde el principio, o solo
+después de recoger un power-up. El profesor calificará la mecánica implementada según lo bien que funcione, el aprovechamiento que de ella se haga en el nivel y la dificultad de
+implementación.
+Calificación: Hasta +1 puntos
+• Mecánica de ataque adicional: El personaje principal tendrá una mecánica de ataque
+secundaria distinta a las implementadas en clase, como lanzamiento de magias, proyectiles o
+ataque con arma cuerpo a cuerpo. Esta mecánica podrá estar disponible desde el principio, o
+solo después de recoger un power-up, y/o podrá tener limitaciones como munición o maná. El
+profesor calificará la mecánica implementada según lo bien que funcione, el aprovechamiento
+que de ella se haga en el nivel y la dificultad de implementación.
+Calificación: Hasta +1 puntos
+• Elemento interactivo adicional: El nivel tendrá un elemento interactivo distinto a los
+implementados en clase, como palancas para abrir puertas, puntos de teletransporte, escaleras, cintas deslizantes. El profesor calificará la mecánica implementada según lo bien que funcione, el aprovechamiento que de ella se haga en el nivel y la dificultad de implementación.
+Calificación: Hasta +1 puntos
+• Enemigo adicional: El nivel tendrá un tipo de enemigo distinto a los implementados en clase, y caracterizado por un patrón de movimiento único y una o varias habilidades especiales. El profesor calificará al enemigo implementado según lo bien que funcione, el aprovechamiento que de él se haga en el nivel y la dificultad de implementación.
+Calificación: Hasta +1 puntos.
+Otros requisitos
+En la evaluación de la práctica se valorarán otra serie de cuestiones relacionadas
+con la calidad de proyecto:
+• Originalidad: Se valorará negativamente que la práctica entregada consista en la mera entrega del trabajo realizado en clase junto con el profesor. Para evitar esta penalización es necesario que el proyecto tenga algún aspecto trabajado por parte del alumno, ya sea a nivel gráfico, de programación o de diseño de niveles.
+Calificación: Hasta -4 puntos.
+• Calidad en los detalles: Se valorará la calidad en los detalles artísticos y de diseño del juego, tales como la creación de escenarios elaborados, el uso de sprites, texturas y/o modelos 3D adecuados para la ambientación del juego, el uso de luces y sistemas de partículas de formas interesantes, el uso de animaciones para crear narrativas ingame, el correcto ajuste de dificultad, etc.
+Calificación: Hasta +1 puntos.
+Observaciones
+El objetivo de la práctica es crear una demo jugable de máximo 3 minutos de duración que sea
+capaz de mostrar las diversas mecánicas del juego y sus puntos fuertes artísticos y de diseño en
+ese breve plazo de tiempo.
+• Se recomienda una duración máxima de 3 minutos para que se pueda mostrar todo el
+potencial del juego en un tiempo breve. El diseño de los niveles debe adecuarse a este hecho, evitando enormes escenarios y largas secciones de paseo donde no se muestre nada de
+interés.
+• Se recomienda que el propio alumno pueda completar la demo de una vez requiriendo de
+cierto uso de su habilidad, como medida para el ajuste de dificultad. Si el juego es demasiado fácil carecerá de interés para el jugador, mientras que si resulta excesivamente difícil resultará frustrante.
+Por último, se valorará que los alumnos intenten implementar distintos requisitos opcionales, aunque sea de forma parcial, con el objetivo de fomentar que el alumno piense en cómo implementar el requisito e intente llevar a cabo su idea, aunque el resultado no sea del todo correcto.
