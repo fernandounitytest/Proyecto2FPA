@@ -3,24 +3,50 @@
 public class Personaje : MonoBehaviour {
     enum Estado { Idle, ToRight, ToLeft};
     [SerializeField] int vidaMaxima;
-    bool estaVivo = true;
     private int vidaActual;
-
-    public int VidaActual
+    
+    public int GetVidaMaxima()
     {
-        get
-        {
-            return vidaActual;
-        }
-
-        set
-        {
-            vidaActual = value;
-        }
+        return vidaMaxima;
     }
 
+    public void SetVidaMaxima(int value)
+    {
+        vidaMaxima = value;
+    }
 
-    // Use this for initialization
+    public int GetVidaActual()
+    {
+        return vidaActual;
+    }
+
+    public void SetVidaActual(int value)
+    {
+        vidaActual = value;
+    }
+
+    public void RecibirDaño(int daño = 1)
+    {
+        vidaActual -= daño;
+        vidaActual = Mathf.Max(vidaActual, 0);
+    }
+
+    public void Curar(int curacion = 1)
+    {
+        vidaActual += curacion;
+        vidaActual = Mathf.Min(vidaActual, vidaMaxima);
+    }
+    
+    public bool EstoyVivo()
+    {
+        return vidaActual > 0;
+    }
+
+    public bool EstoyDañado()
+    {
+        return vidaActual < vidaMaxima;
+    }
+
     void Start () {
 		
 	}
