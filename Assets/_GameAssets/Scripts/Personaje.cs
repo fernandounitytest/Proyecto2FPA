@@ -4,55 +4,66 @@ public class Personaje : MonoBehaviour {
     enum Estado { Idle, ToRight, ToLeft};
     [SerializeField] int vidaMaxima;
     private int vidaActual;
-    
-    public int GetVidaMaxima()
+
+    public int VidaActual
     {
-        return vidaMaxima;
+        get
+        {
+            return vidaActual;
+        }
+
+        set
+        {
+            vidaActual = value;
+        }
     }
 
-    public void SetVidaMaxima(int value)
+    public int VidaMaxima
     {
-        vidaMaxima = value;
-    }
+        get
+        {
+            return vidaMaxima;
+        }
 
-    public int GetVidaActual()
-    {
-        return vidaActual;
-    }
-
-    public void SetVidaActual(int value)
-    {
-        vidaActual = value;
+        set
+        {
+            vidaMaxima = value;
+        }
     }
 
     public void RecibirDaño(int daño = 1)
     {
-        vidaActual -= daño;
-        vidaActual = Mathf.Max(vidaActual, 0);
+        VidaActual -= daño;
+        VidaActual = Mathf.Max(VidaActual, 0);
     }
 
     public void Curar(int curacion = 1)
     {
-        vidaActual += curacion;
-        vidaActual = Mathf.Min(vidaActual, vidaMaxima);
+        VidaActual += curacion;
+        VidaActual = Mathf.Min(VidaActual, VidaMaxima);
     }
     
     public bool EstoyVivo()
     {
-        return vidaActual > 0;
+        return VidaActual > 0;
     }
 
     public bool EstoyDañado()
     {
-        return vidaActual < vidaMaxima;
+        return VidaActual < VidaMaxima;
     }
 
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        vidaActual = vidaMaxima;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

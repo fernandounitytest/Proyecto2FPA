@@ -12,6 +12,8 @@ public class Jugador : Personaje {
     bool enSuelo=true;
     bool saltando = false;
 
+
+
     // Use this for initialization
     void Start () {
 		

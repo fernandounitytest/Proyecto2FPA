@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TodosLosSprites
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2b78e6fc48b81064eaaea0802cb538c3, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 562bc14003139074d92fb67e43b75e79, type: 3}
+  - {fileID: 21300000, guid: b2edbc509988a234ba8d8b30f1df08ea, type: 3}
+  - {fileID: 21300000, guid: c280806043d084e4185b5ce9d2c9b6f8, type: 3}
+  - {fileID: 21300000, guid: dbcdb06061d754647955c0fba0d0ced2, type: 3}
+  - {fileID: 21300000, guid: 759eb260ed11062448299d52e7df8518, type: 3}
+  - {fileID: 21300000, guid: 3a715670b391ea34096f8848827046ad, type: 3}
+  - {fileID: 21300000, guid: 509fe08089c6fb64ca0d17d739cc0a83, type: 3}
+  - {fileID: 21300000, guid: 46df62905c01e094fa34e2706a131fd9, type: 3}
+  - {fileID: 21300000, guid: b45f47d0941a3f74c9963beaf75a162f, type: 3}
+  - {fileID: 21300000, guid: aaba0bd09755fc24dba06c13cd13065f, type: 3}
+  - {fileID: 21300000, guid: d6f680f044d1fee4fada0a55b7a2eb88, type: 3}
+  - {fileID: 21300000, guid: 999617f0f4383354e8b8906317c19b35, type: 3}
+  - {fileID: 21300000, guid: 7858872187a7f874d8f39d6eea524d79, type: 3}
+  - {fileID: 21300000, guid: ac35d031c33049945b30cd715720557d, type: 3}
+  - {fileID: 21300000, guid: 782f7241bdaa0954ca1db3284a0ceca5, type: 3}
+  - {fileID: 21300000, guid: bab613611fbe5b047a603b3ad3985f2d, type: 3}
+  - {fileID: 21300000, guid: 333e627141d2d4d48a373c916033f8c1, type: 3}
+  - {fileID: 21300000, guid: 36151f91c02587d419fe48084ae2fed0, type: 3}
+  - {fileID: 21300000, guid: 37d3aad1448fa714fa3d870e240ab76b, type: 3}
+  - {fileID: 21300000, guid: de23e4e181dbdbb4fa19de63b22a6877, type: 3}
+  - {fileID: 21300000, guid: 24684af158345334da3495f83d9a3cb4, type: 3}
+  - {fileID: 21300000, guid: 06d44a4245f5b574dbce8cd30af5b5e0, type: 3}
+  - {fileID: 21300000, guid: ccf5a1721c52a8945a7f940e53235ed2, type: 3}
+  - {fileID: 21300000, guid: d1971972096e0ff489680ffe966e993b, type: 3}
+  - {fileID: 21300000, guid: ad3ff882bf9a7134d85f62452fcdabe5, type: 3}
+  - {fileID: 21300000, guid: 110151921e6b43c47a36397f3a331fb8, type: 3}
+  - {fileID: 21300000, guid: 07cbd2b2d42f11941a26497f0ebca8e0, type: 3}
+  - {fileID: 21300000, guid: 46a8afb2f4645ed46a6dc3d14176224b, type: 3}
+  - {fileID: 21300000, guid: a70975d2598f44e4688fa6e527742557, type: 3}
+  - {fileID: 21300000, guid: 8fdb4cf2b6e3ff645adeb26d29be32cc, type: 3}
+  - {fileID: 21300000, guid: 959f6253617c8a0408a31cf7536746e4, type: 3}
+  - {fileID: 21300000, guid: 231774533a7cbdc41b4296c475b6d0d0, type: 3}
+  - {fileID: 21300000, guid: ca35ff53f0288054d9fb1fe20a9bba14, type: 3}
+  - {fileID: 21300000, guid: 696d7d93cfcc3cb408c970d183110ee0, type: 3}
+  - {fileID: 21300000, guid: 602634c3a35a6c240958b1b5bf321242, type: 3}
+  - {fileID: 21300000, guid: ca5439c30c908e74c878864a7acb1d85, type: 3}
+  - {fileID: 21300000, guid: 4c9f45d3396b7e14dbd7453a74eed4d0, type: 3}
+  - {fileID: 21300000, guid: 3d3d98e3602438c4cb312ce209763e1a, type: 3}
+  - {fileID: 21300000, guid: 2d3321f342cdc10408cab4d6423d2268, type: 3}
+  - {fileID: 21300000, guid: 43778c14a40bca34093c42f1bbf5b0e9, type: 3}
+  - {fileID: 21300000, guid: e11a7e84d9949f14da7e621e473cbef8, type: 3}
+  - {fileID: 21300000, guid: 336949d48ce323843acd1b7d1fa77aea, type: 3}
+  - {fileID: 21300000, guid: 90bc331599d8a0e4e965426c6e6901e3, type: 3}
+  - {fileID: 21300000, guid: c1db0815ee36b254ea55d06d1ab4100c, type: 3}
+  - {fileID: 21300000, guid: a7034d553bcffea41b5edcbad7127778, type: 3}
+  - {fileID: 21300000, guid: 6d55da26674b3264ab154e73b94a62cc, type: 3}
+  - {fileID: 21300000, guid: bc463d360ae78a244a046d886e3aabaa, type: 3}
+  - {fileID: 21300000, guid: 93349d9689ccbf64ba67dca9a551bede, type: 3}
+  - {fileID: 21300000, guid: 8b858eb63d1bf0748b70b9661b3d73ba, type: 3}
+  - {fileID: 21300000, guid: 07810fe69215edd4a98407f8937eca1c, type: 3}
+  - {fileID: 21300000, guid: d7be5037290216247ac7924fdb1db77e, type: 3}
+  - {fileID: 21300000, guid: 198c28d756e578649bf2cb51cac43bad, type: 3}
+  - {fileID: 21300000, guid: ece998f731982794297eaeb08657384f, type: 3}
+  - {fileID: 21300000, guid: 2a42d34859a922943afe2b311a5702cb, type: 3}
+  - {fileID: 21300000, guid: d9852f48a2f99784db3d330f51cd77ca, type: 3}
+  - {fileID: 21300000, guid: 4f037f789544c08429ca12275181f2f5, type: 3}
+  - {fileID: 21300000, guid: 8f00079856bae0645917c5eb2056dfac, type: 3}
+  - {fileID: 21300000, guid: f71a85a82f06eb1479389f7402e5065a, type: 3}
+  - {fileID: 21300000, guid: 21c141c873885274d9499f9977240b5c, type: 3}
+  - {fileID: 21300000, guid: 40021dc818670424f836ebb559f3eef1, type: 3}
+  - {fileID: 21300000, guid: e336c0d8690a25e4c87eadbc8563cba1, type: 3}
+  - {fileID: 21300000, guid: 021554292902f61418d18bbb35a321d4, type: 3}
+  - {fileID: 21300000, guid: 45cdf829d2d432548be1943790cd2f10, type: 3}
+  - {fileID: 21300000, guid: 95402439d207a3b4d921b57246a12e93, type: 3}
+  - {fileID: 21300000, guid: 9b09b649492f93343b2714903676d759, type: 3}
+  - {fileID: 21300000, guid: 3b4c9e79c5b55ac4484a00ac94e855ed, type: 3}
+  - {fileID: 21300000, guid: 0fe1c8d90bb910043bea398f25cb9610, type: 3}
+  - {fileID: 21300000, guid: 0cd86b2ad8483e349906c87104ff352d, type: 3}
+  - {fileID: 21300000, guid: 2a71dc2ac337be34f867410bbf1d3bfa, type: 3}
+  - {fileID: 21300000, guid: 8bb2bb7a1e265d743bef1ad64bf7a2c9, type: 3}
+  - {fileID: 21300000, guid: 666cfaaa4eca8ae4e83660723372b95a, type: 3}
+  - {fileID: 21300000, guid: 9938d7ca1251fb847a2647273bb11f8b, type: 3}
+  - {fileID: 21300000, guid: b3493f2bcf1f10046b840f407179ab25, type: 3}
+  - {fileID: 21300000, guid: be6dbcabb68a02b45b2890c532640ad5, type: 3}
+  - {fileID: 21300000, guid: 4525803c94d6f8943ae16ed1d4bf1844, type: 3}
+  - {fileID: 21300000, guid: 47253d4c79c234c4ca110982f772a56d, type: 3}
+  - {fileID: 21300000, guid: fc70855ca494d3d428b7dde2a13fbcdc, type: 3}
+  - {fileID: 21300000, guid: faff0a8c8e2964347a1ce7153d2765d3, type: 3}
+  - {fileID: 21300000, guid: 3f36b1ac6d76e7b40bb8396d1fbd0596, type: 3}
+  - {fileID: 21300000, guid: bcdfd9bc04d1967478c5bf181dc1581c, type: 3}
+  - {fileID: 21300000, guid: 22c8d2ecc1777f4439e401091ac595a7, type: 3}
+  - {fileID: 21300000, guid: c6f1bb2d12b827b4c837c6e11fdd50bd, type: 3}
+  - {fileID: 21300000, guid: 5c8dad2db2c68d846a6c9f1c81904d76, type: 3}
+  - {fileID: 21300000, guid: 3bf7dd3db01468f41b2490a274682714, type: 3}
+  - {fileID: 21300000, guid: cf12006de911fc84b8f4d7009125d504, type: 3}
+  - {fileID: 21300000, guid: 614e629dd31df944b9aa8482a1c057c3, type: 3}
+  - {fileID: 21300000, guid: e52d77cd4a02b7c42bcd96e7278be4d7, type: 3}
+  - {fileID: 21300000, guid: b302cccdb03d4bf4fa00157a61fd2307, type: 3}
+  - {fileID: 21300000, guid: 61c7c62e0a5cf20438d85ce9f1c31c6a, type: 3}
+  - {fileID: 21300000, guid: 34c7213e2cc77ba439ef5d63e43fec69, type: 3}
+  - {fileID: 21300000, guid: cc0e1fbe5bfa92d4196d5f1d09e21020, type: 3}
+  - {fileID: 21300000, guid: 815660ce0fc25654e8a4311dde0c8760, type: 3}
+  - {fileID: 21300000, guid: c57d84ce73c522043ab4b73bfedcfa8c, type: 3}
+  - {fileID: 21300000, guid: f85b32dedf9f4c147a16ba87f43b3357, type: 3}
+  - {fileID: 21300000, guid: ee73c01fd72e0b9449655b3479a50aae, type: 3}
+  - {fileID: 21300000, guid: a69e532fa1939404a98edb18d3959be4, type: 3}
+  - {fileID: 21300000, guid: c2edc73f7bbe9344b996bf9d4eed6de1, type: 3}
+  - {fileID: 21300000, guid: 3b4f524f0018f674194ccf61ab32f218, type: 3}
+  - {fileID: 21300000, guid: 98d8cd8f43debe745a28849e1a782245, type: 3}
+  - {fileID: 21300000, guid: 803dd1bfab1762e47bcdf6bfb25d3532, type: 3}
+  - {fileID: 21300000, guid: 083948bf598364b4082a7416312a557d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - oldman-walk
+  - house-b
+  - bearded-idle-4
+  - hat-man-idle
+  - bearded-idle-1
+  - oldman-idle-2
+  - woman-walk
+  - environment-preview
+  - barrel
+  - oldman-idle-5
+  - hat-man-idle-2
+  - oldman-idle-4
+  - oldman-walk-3
+  - bearded-walk-2
+  - bearded-idle
+  - bearded-walk
+  - bearded-idle-3
+  - background
+  - oldman-walk-11
+  - woman-walk-3
+  - hat-man-idle
+  - woman-walk-6
+  - hat-man-walk-3
+  - hat-man-walk
+  - woman-idle
+  - crate
+  - woman-idle-4
+  - hat-man-walk
+  - woman-idle-3
+  - bearded-walk-5
+  - oldman-idle
+  - oldman-idle
+  - bearded-walk-1
+  - bearded-walk
+  - woman-walk
+  - woman-idle-2
+  - title-screen
+  - woman-walk-5
+  - bearded-idle-2
+  - oldman-idle-6
+  - woman-walk
+  - middleground
+  - street-lamp
+  - oldman-walk-2
+  - oldman-walk-9
+  - bearded-idle
+  - hat-man-idle
+  - hat-man-walk-6
+  - crate-stack
+  - woman-idle
+  - house-a
+  - woman-idle
+  - tileset
+  - sign
+  - environment
+  - houses
+  - bearded-idle-5
+  - bearded-walk-6
+  - well
+  - hat-man-walk-5
+  - oldman-walk-5
+  - woman-walk-1
+  - oldman-idle-1
+  - instructions
+  - woman-idle-6
+  - title-screen
+  - oldman-walk-10
+  - hat-man-walk-1
+  - hat-man-idle-4
+  - credits-text
+  - hat-man-walk
+  - oldman-walk-1
+  - hat-man-idle-1
+  - bearded-idle
+  - oldman-idle-3
+  - oldman-idle
+  - house-c
+  - bearded-walk-4
+  - oldman-walk-4
+  - oldman-walk
+  - oldman-walk-6
+  - props
+  - bearded-walk-3
+  - concepts
+  - oldman-idle-7
+  - wagon
+  - oldman-walk
+  - oldman-idle-8
+  - woman-idle-5
+  - woman-walk-2
+  - hat-man-walk-2
+  - oldman-walk-8
+  - hat-man-walk-4
+  - hat-man-idle-3
+  - woman-idle-1
+  - woman-idle-7
+  - oldman-walk-12
+  - woman-walk-4
+  - oldman-walk-7
+  - press-enter-text
+  - bearded-walk
+  m_Tag: TodosLosSprites
+  m_IsVariant: 0
