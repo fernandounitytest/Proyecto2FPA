@@ -80,4 +80,9 @@ public class Jugador : Personaje {
         velocidad.y = velocidadSalto;
         miRigidbody.velocity = velocidad;
     }
+
+    protected override void Morir()
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -15,7 +15,7 @@ SpriteAtlas:
       maxTextureSize: 2048
       textureCompression: 0
       filterMode: 0
-      generateMipMaps: 0
+      generateMipMaps: 1
       readable: 0
       crunchedCompression: 0
       sRGB: 1
@@ -41,10 +41,12 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 2b78e6fc48b81064eaaea0802cb538c3, type: 3}
+    - {fileID: 102900000, guid: 92232fe673183bb438b9b610c1ad2307, type: 3}
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 562bc14003139074d92fb67e43b75e79, type: 3}
+  - {fileID: 21300000, guid: c7db8e40ba6005f42b37bacbf0a2259d, type: 3}
   - {fileID: 21300000, guid: b2edbc509988a234ba8d8b30f1df08ea, type: 3}
   - {fileID: 21300000, guid: c280806043d084e4185b5ce9d2c9b6f8, type: 3}
   - {fileID: 21300000, guid: dbcdb06061d754647955c0fba0d0ced2, type: 3}
@@ -101,10 +103,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d9852f48a2f99784db3d330f51cd77ca, type: 3}
   - {fileID: 21300000, guid: 4f037f789544c08429ca12275181f2f5, type: 3}
   - {fileID: 21300000, guid: 8f00079856bae0645917c5eb2056dfac, type: 3}
+  - {fileID: 21300000, guid: 9ee4089803ea4d84ea0660d160ab7c90, type: 3}
   - {fileID: 21300000, guid: f71a85a82f06eb1479389f7402e5065a, type: 3}
   - {fileID: 21300000, guid: 21c141c873885274d9499f9977240b5c, type: 3}
   - {fileID: 21300000, guid: 40021dc818670424f836ebb559f3eef1, type: 3}
   - {fileID: 21300000, guid: e336c0d8690a25e4c87eadbc8563cba1, type: 3}
+  - {fileID: 21300000, guid: 8d1f45f895e2e0843898d0882986a2da, type: 3}
   - {fileID: 21300000, guid: 021554292902f61418d18bbb35a321d4, type: 3}
   - {fileID: 21300000, guid: 45cdf829d2d432548be1943790cd2f10, type: 3}
   - {fileID: 21300000, guid: 95402439d207a3b4d921b57246a12e93, type: 3}
@@ -132,6 +136,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 614e629dd31df944b9aa8482a1c057c3, type: 3}
   - {fileID: 21300000, guid: e52d77cd4a02b7c42bcd96e7278be4d7, type: 3}
   - {fileID: 21300000, guid: b302cccdb03d4bf4fa00157a61fd2307, type: 3}
+  - {fileID: 21300000, guid: 5d4720ddd85a226428b6be5e24c57b03, type: 3}
   - {fileID: 21300000, guid: 61c7c62e0a5cf20438d85ce9f1c31c6a, type: 3}
   - {fileID: 21300000, guid: 34c7213e2cc77ba439ef5d63e43fec69, type: 3}
   - {fileID: 21300000, guid: cc0e1fbe5bfa92d4196d5f1d09e21020, type: 3}
@@ -147,6 +152,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 083948bf598364b4082a7416312a557d, type: 3}
   m_PackedSpriteNamesToIndex:
   - oldman-walk
+  - BirdB_0003_Capa-0
   - house-b
   - bearded-idle-4
   - hat-man-idle
@@ -203,10 +209,12 @@ SpriteAtlas:
   - environment
   - houses
   - bearded-idle-5
+  - BirdB_0001_Capa-2
   - bearded-walk-6
   - well
   - hat-man-walk-5
   - oldman-walk-5
+  - BirdB_0002_Capa-3
   - woman-walk-1
   - oldman-idle-1
   - instructions
@@ -234,6 +242,7 @@ SpriteAtlas:
   - wagon
   - oldman-walk
   - oldman-idle-8
+  - BirdB_0000_Capa-1
   - woman-idle-5
   - woman-walk-2
   - hat-man-walk-2

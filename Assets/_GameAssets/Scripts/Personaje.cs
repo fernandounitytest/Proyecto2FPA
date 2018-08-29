@@ -1,22 +1,9 @@
 ﻿using UnityEngine;
 
-public class Personaje : MonoBehaviour {
+public abstract class Personaje : MonoBehaviour {
     enum Estado { Idle, ToRight, ToLeft};
-    [SerializeField] int vidaMaxima;
-    private int vidaActual;
-
-    public int VidaActual
-    {
-        get
-        {
-            return vidaActual;
-        }
-
-        set
-        {
-            vidaActual = value;
-        }
-    }
+    [SerializeField] int vidaMaxima = 1;
+    int vidaActual;
 
     public int VidaMaxima
     {
@@ -24,46 +11,61 @@ public class Personaje : MonoBehaviour {
         {
             return vidaMaxima;
         }
+    }
 
+    public int VidaActual
+    {
+        get
+        {
+            return vidaActual;
+        }
         set
         {
-            vidaMaxima = value;
+            vidaActual = Mathf.Clamp(value, 0, VidaMaxima);
+            if (vidaActual == 0)
+            {
+                Morir();
+            }
         }
     }
 
-    public void RecibirDaño(int daño = 1)
+    public bool EstaVivo
     {
-        VidaActual -= daño;
-        VidaActual = Mathf.Max(VidaActual, 0);
+        get
+        {
+            return vidaActual > 0;
+        }
     }
 
-    public void Curar(int curacion = 1)
+    public bool EstoyDañado
     {
-        VidaActual += curacion;
-        VidaActual = Mathf.Min(VidaActual, VidaMaxima);
-    }
-    
-    public bool EstoyVivo()
-    {
-        return VidaActual > 0;
+        get
+        {
+            return vidaActual < vidaMaxima;
+        }
     }
 
-    public bool EstoyDañado()
-    {
-        return VidaActual < VidaMaxima;
-    }
-
-    void Start () {
-		
-	}
-
-    private void Awake()
+    protected virtual void Awake()
     {
         vidaActual = vidaMaxima;
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
+    public virtual void RecibirDaño(int daño = 1)
+    {
+        vidaActual -= daño;
+        vidaActual = Mathf.Max(vidaActual, 0);
+
+        if (vidaActual == 0)
+        {
+            Morir();
+        }
+    }
+
+    public void Curar(int curacion = 1)
+    {
+        vidaActual += curacion;
+        vidaActual = Mathf.Min(vidaActual, vidaMaxima);
+    }
+
+    protected abstract void Morir();
 }
