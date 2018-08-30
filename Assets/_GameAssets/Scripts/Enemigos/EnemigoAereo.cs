@@ -15,7 +15,6 @@ public class EnemigoAereo : Enemigo {
         estado = Estado.ToRight;
         transform.localScale = new Vector3(-1, 1, 1);
         tweenOscilar = this.transform.DOMoveY(0.3f, 0.5f).SetLoops(-1,LoopType.Yoyo).SetRelative().SetEase(Ease.InOutSine);
-        Morir();
     }
 	
 	// Update is called once per frame

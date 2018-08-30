@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class Enemigo : Personaje {
+public abstract class Enemigo : Personaje {
 
     [SerializeField] ParticleSystem prefabExplosion;
 
