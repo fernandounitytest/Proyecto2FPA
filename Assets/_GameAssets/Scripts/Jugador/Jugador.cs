@@ -152,7 +152,7 @@ public class Jugador : Personaje {
         inmunidadTemporal = true;
 
         Physics2D.IgnoreLayerCollision(
-                LayerMask.NameToLayer("Enemigos"),
+                LayerMask.NameToLayer("CapaEnemigos"),
                 LayerMask.NameToLayer("Jugador"),
                 ignore: true);
 

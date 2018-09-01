@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carreta : MonoBehaviour {
+public class ElementoMovimiento : MonoBehaviour {
     enum Estado {  Idle, ToRight, ToLeft};
     private Estado estado = Estado.Idle;
-    [SerializeField] int speed = 1;
-    [SerializeField] int distance = 20;
-    private int currentDistance = 0;
+    [SerializeField] protected int speed = 1;
+    [SerializeField] protected int distance = 20;
+    protected int currentDistance = 0;
 	// Use this for initialization
 	void Start () {
         estado = Estado.ToRight;

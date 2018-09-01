@@ -71,9 +71,16 @@ public class JugadorCaminar : MonoBehaviour {
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        miAnimator.SetFloat("xInput", xInput);
+        //miAnimator.SetFloat("xInput", xInput);
 
         //miRigidbody.velocity.x = xInput * velocidadX;
+        if (xInput > 0 || xInput < 0)
+        {
+            miAnimator.SetBool("taberneroAndando", true);
+        } else
+        {
+            miAnimator.SetBool("taberneroAndando", false);
+        }
 
         Vector2 velocidad = miRigidbody.velocity;
         velocidad.x = xInput * velocidadX;

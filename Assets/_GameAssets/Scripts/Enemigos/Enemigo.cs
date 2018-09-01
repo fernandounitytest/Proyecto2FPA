@@ -41,7 +41,6 @@ public abstract class Enemigo : Personaje {
         }
 
         this.enabled = false;
-        miAnimator.SetTrigger("morir");//Es un trigger para la transición y mostrar la animación de morir
         miRigidbody.isKinematic = false;
 
         Tweener animacionFade = this.GetComponent<SpriteRenderer>().DOFade(0, duration: 1);
