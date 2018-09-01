@@ -49,10 +49,6 @@ public class Jugador : Personaje {
 
         miAtaqueFuego = GetComponent<AtaqueFuego>();
 
-
-        int tipoPersonaje = PlayerPrefs.GetInt("tipoPersonaje", 0);
-        Debug.Log(tipoPersonaje);
-        miAnimator.runtimeAnimatorController = controladoresColores[tipoPersonaje];
     }
 
     private void Start()

@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public abstract class Enemigo : Personaje {
 
-    [SerializeField] ParticleSystem prefabExplosion;
+    [SerializeField] public ParticleSystem prefabExplosion;
 
     protected Animator miAnimator;
     protected Rigidbody2D miRigidbody;

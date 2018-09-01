@@ -32,8 +32,13 @@ public class EnemigoAereo : Enemigo {
 
     protected override void Morir()
     {
+        ParticleSystem ps = Instantiate(prefabExplosion, this.transform.position, Quaternion.identity);
+        ps.Play();
+        AudioSource bang = GetComponent<AudioSource>();
+        bang.Play();
+        Debug.Log("Bang");
         base.Morir();
-
         tweenOscilar.Kill();
+        Destroy(ps.gameObject);
     }
 }
