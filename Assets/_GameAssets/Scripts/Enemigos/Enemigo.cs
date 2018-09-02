@@ -20,14 +20,12 @@ public abstract class Enemigo : Personaje {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /*
-        if (this.EstaVivo && collision.collider.CompareTag("Player"))
+        if (this.EstaVivo && collision.collider.CompareTag("Jugador"))
         {
             Jugador jugador = collision.collider.GetComponent<Jugador>();
             jugador.RecibirEmpujon(desdePosicion: this.transform.position);
             jugador.RecibirDaño();
         }
-        */
     }
 
     protected override void Morir()

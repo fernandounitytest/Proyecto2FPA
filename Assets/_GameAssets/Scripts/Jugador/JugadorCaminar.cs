@@ -48,7 +48,7 @@ public class JugadorCaminar : MonoBehaviour {
         ComprobarSuelo();
         ComprobarEnemigo();
 
-        // BloquearDeslizamiento();
+        BloquearDeslizamiento();
     }
 
     private void Update()
@@ -127,8 +127,8 @@ public class JugadorCaminar : MonoBehaviour {
         {
             empujado = false;
         }
-
         miAnimator.SetBool("enSuelo", enSuelo);
+        Debug.Log("Ensuelo:" + enSuelo);
     }
 
     private void ComprobarEnemigo()

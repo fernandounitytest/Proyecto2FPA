@@ -15,7 +15,7 @@ public class Jugador : Personaje {
     Rigidbody2D miRigidbody;
     Animator miAnimator;
 
-    AtaqueFuego miAtaqueFuego;
+    AtaqueManzana miAtaqueManzana;
 
     JugadorCaminar miMovimientoCaminar;
     JugadorNadar miMovimientoNadar;
@@ -47,7 +47,7 @@ public class Jugador : Personaje {
         miMovimientoNadar = GetComponent<JugadorNadar>();
         miMovimientoNadar.enabled = false;
 
-        miAtaqueFuego = GetComponent<AtaqueFuego>();
+        miAtaqueManzana = GetComponent<AtaqueManzana>();
 
     }
 
@@ -107,7 +107,7 @@ public class Jugador : Personaje {
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            miAtaqueFuego.Disparar();
+            miAtaqueManzana.Disparar();
         }
     }
 
@@ -134,7 +134,7 @@ public class Jugador : Personaje {
         base.RecibirDaño(daño);
         ActivarInmunidadTemporal();
 
-        miAtaqueFuego.Desactivar();
+        miAtaqueManzana.Desactivar();
     }
 
     public void RecibirEmpujon(Vector3 desdePosicion)
@@ -171,7 +171,7 @@ public class Jugador : Personaje {
         inmunidadTemporal = false;
 
         Physics2D.IgnoreLayerCollision(
-                LayerMask.NameToLayer("Enemigos"),
+                LayerMask.NameToLayer("CapaEnemigos"),
                 LayerMask.NameToLayer("Jugador"),
                 ignore: false);
     }
