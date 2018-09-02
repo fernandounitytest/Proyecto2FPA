@@ -12,7 +12,7 @@ public class AtaqueManzana : MonoBehaviour {
     [SerializeField] Transform puntoDisparo;
     [SerializeField] float tiempoEntreDisparos = 0.5f;
     [SerializeField] Image indicadorManzanaUI;
-    Rigidbody2D nuevaBolaFuego;
+    Rigidbody2D nuevaManzana;
 
     float tiempoUltimoDisparo;
 
@@ -55,19 +55,22 @@ public class AtaqueManzana : MonoBehaviour {
         if (this.isActiveAndEnabled && Time.time > tiempoUltimoDisparo + tiempoEntreDisparos)
         {
             tiempoUltimoDisparo = Time.time;
-            nuevaBolaFuego = Instantiate(prefabManzana,
+            nuevaManzana = Instantiate(prefabManzana,
                                                      position: puntoDisparo.position,
                                                      rotation: Quaternion.identity);
             float escalaX = this.transform.localScale.x;
             Vector3 vectorLanzamiento = new Vector3(1 * escalaX * fuerzaDisparo, 5);
-            nuevaBolaFuego.AddForce(vectorLanzamiento, ForceMode2D.Impulse);
-            Invoke("DestruirManzana", 1000f);
+            nuevaManzana.AddForce(vectorLanzamiento, ForceMode2D.Impulse);
+            Invoke("DestruirManzana", 3);
         }
 
     }
     private void DestruirManzana()
     {
-        Destroy(nuevaBolaFuego.gameObject);
+        if (nuevaManzana != null)
+        {
+            Destroy(nuevaManzana.gameObject);
+        }
     }
 
 }

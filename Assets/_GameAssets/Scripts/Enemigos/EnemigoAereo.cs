@@ -6,6 +6,7 @@ using DG.Tweening;
 public class EnemigoAereo : Enemigo {
     enum Estado { Idle, ToRight, ToLeft };
     private Estado estado = Estado.Idle;
+    private bool vivo = true;
     [SerializeField] int speed = 1;
     [SerializeField] int distance = 20;
     private int currentDistance = 0;
@@ -32,13 +33,16 @@ public class EnemigoAereo : Enemigo {
 
     protected override void Morir()
     {
-        ParticleSystem ps = Instantiate(prefabExplosion, this.transform.position, Quaternion.identity);
-        ps.Play();
-        AudioSource bang = GetComponent<AudioSource>();
-        bang.Play();
-        Debug.Log("Bang");
-        base.Morir();
-        tweenOscilar.Kill();
-        Destroy(ps.gameObject);
+        if (vivo)
+        {
+            vivo = false;
+            ParticleSystem ps = Instantiate(prefabExplosion, this.transform.position, Quaternion.identity);
+            ps.Play();
+            AudioSource bang = GetComponent<AudioSource>();
+            bang.Play();
+            base.Morir();
+            tweenOscilar.Kill();
+            Destroy(ps.gameObject);
+        }
     }
 }
