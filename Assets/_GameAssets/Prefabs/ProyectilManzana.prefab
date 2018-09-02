@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212992912879960180}
   - component: {fileID: 50542949460486344}
   - component: {fileID: 58893578364880310}
+  - component: {fileID: 114835558401657296}
   m_Layer: 0
   m_Name: ProyectilManzana
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1648947717022446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.015331, y: -1.8963888, z: 0}
+  m_LocalPosition: {x: 24.393616, y: 356.65662, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,6 +78,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.24902724
+--- !u!114 &114835558401657296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648947717022446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f8078ae6812024eaaeca5c42f162dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 0}
 --- !u!212 &212992912879960180
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -18,6 +18,8 @@ public class JugadorCaminar : MonoBehaviour {
 
     [SerializeField] Vector2 velocidadEmpujon = new Vector2(10, 10);
 
+    [SerializeField] AudioSource pasos;
+
     float gravedadInicial;
 
     bool saltando;
@@ -59,34 +61,32 @@ public class JugadorCaminar : MonoBehaviour {
     private void Moverse()
     {
         if (empujado) { return; }
-
         float xInput = Input.GetAxis("Horizontal");
-
-        if (xInput > 0)
+        if ((xInput > 0 || xInput < 0) && (enSuelo))
         {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (xInput < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-        //miAnimator.SetFloat("xInput", xInput);
-
-        //miRigidbody.velocity.x = xInput * velocidadX;
-        if (xInput > 0 || xInput < 0)
-        {
+            if (xInput > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (xInput < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
             miAnimator.SetBool("taberneroAndando", true);
+            if (!pasos.isPlaying)
+            {
+                pasos.Play();
+            }
+
         } else
         {
             miAnimator.SetBool("taberneroAndando", false);
+            pasos.Stop();
         }
 
         Vector2 velocidad = miRigidbody.velocity;
         velocidad.x = xInput * velocidadX;
         miRigidbody.velocity = velocidad;
-
-
     }
 
     private void ComprobarSalto()
@@ -94,7 +94,6 @@ public class JugadorCaminar : MonoBehaviour {
         if (enSuelo && Input.GetButtonDown("Jump"))
         {
             saltando = true;
-
             Saltar();
         }
         else if (Input.GetButtonUp("Jump"))
@@ -128,7 +127,7 @@ public class JugadorCaminar : MonoBehaviour {
             empujado = false;
         }
         miAnimator.SetBool("enSuelo", enSuelo);
-        Debug.Log("Ensuelo:" + enSuelo);
+
     }
 
     private void ComprobarEnemigo()

@@ -178,7 +178,7 @@ public class Jugador : Personaje {
 
     protected override void Morir()
     {
-        SceneManager.LoadScene("gameoverMenu");
+        SceneManager.LoadScene("GameOverScene");
     }
 
 

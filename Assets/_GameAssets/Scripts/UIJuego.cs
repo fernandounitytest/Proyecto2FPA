@@ -31,7 +31,7 @@ public class UIJuego : MonoBehaviour {
             iconosVida[i] = nuevoIconoVida;
         }
 
-        ActualizarCorazones();
+        ActualizarVidas();
     }
 
     void Update()
@@ -39,23 +39,23 @@ public class UIJuego : MonoBehaviour {
         if (jugador.VidaActual != ultimaVidaActual)
         {
             ultimaVidaActual = jugador.VidaActual;
-            ActualizarCorazones();
+            ActualizarVidas();
         }
     }
 
-    private void ActualizarCorazones()
+    private void ActualizarVidas()
     {
         int vidaActual = jugador.VidaActual;
         int vidaMaxima = jugador.VidaMaxima;
-
         for (int i = 0; i < vidaActual; i++)
         {
             iconosVida[i].sprite = spriteVida;
+            iconosVida[i].color = new Color32(255, 255, 255, 255);
         }
         for (int i = vidaActual; i < vidaMaxima; i++)
         {
-            //iconosVida[i].sprite = spriteCorazonVacio;
             iconosVida[i].sprite = spriteVida;
+            iconosVida[i].color = new Color32(0, 0, 0, 128);
         }
     }
 }
