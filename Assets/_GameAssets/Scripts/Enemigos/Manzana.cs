@@ -21,7 +21,7 @@ public class Manzana : MonoBehaviour {
         if (enemigo != null)
         {
             enemigo.RecibirDaño();
-            Destroy(this.gameObject);
         }
+        Destroy(this.gameObject);
     }
 }

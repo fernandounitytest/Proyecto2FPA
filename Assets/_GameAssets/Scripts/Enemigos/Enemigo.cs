@@ -30,14 +30,6 @@ public abstract class Enemigo : Personaje {
 
     protected override void Morir()
     {
-        if (prefabExplosion != null)
-        {
-            ParticleSystem nuevaExplosion = Instantiate(
-            prefabExplosion, this.transform.position, Quaternion.identity);
-
-            Destroy(nuevaExplosion.gameObject, nuevaExplosion.main.duration);
-        }
-
         this.enabled = false;
         miRigidbody.isKinematic = false;
 
@@ -46,9 +38,14 @@ public abstract class Enemigo : Personaje {
         animacionFade.OnComplete(Destruirme);
     }
 
-    void Destruirme()
+    protected void Destruirme()
     {
-        Destroy(this.gameObject);
+        ParticleSystem ps = Instantiate(prefabExplosion, this.transform.position, Quaternion.identity);
+        ps.Play();
+        AudioSource bang = GetComponent<AudioSource>();
+        bang.Play();
+        Destroy(ps.gameObject, ps.main.duration);
+        Destroy(this.gameObject, ps.main.duration);
     }
 
 }

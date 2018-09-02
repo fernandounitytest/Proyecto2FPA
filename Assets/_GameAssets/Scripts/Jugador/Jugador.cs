@@ -10,7 +10,7 @@ public class Jugador : Personaje {
 
     [SerializeField] RuntimeAnimatorController[] controladoresColores;
 
-    GameObject ultimoPuntoSpawn;
+    Transform ultimoPuntoSpawn;
 
     Rigidbody2D miRigidbody;
     Animator miAnimator;
@@ -22,7 +22,7 @@ public class Jugador : Personaje {
 
     public bool inmunidadTemporal;
 
-    public GameObject UltimoPuntoSpawn
+    public Transform UltimoPuntoSpawn
     {
         get
         {
@@ -89,9 +89,9 @@ public class Jugador : Personaje {
 
     private void CrearCheckpointInicial()
     {
-        GameObject checkPointInicial = new GameObject("Checkpoint Inicial");
-        checkPointInicial.transform.position = this.transform.position;
-        UltimoPuntoSpawn = checkPointInicial;
+        //GameObject checkPointInicial = new GameObject("Checkpoint Inicial");
+        //checkPointInicial.transform.position = this.transform.position;
+        UltimoPuntoSpawn = this.transform;
     }
 
     private void ComprobarLimiteCaida()
@@ -113,6 +113,7 @@ public class Jugador : Personaje {
 
     void ResetearEnUltimoPuntoSpawn()
     {
+        Debug.Log("resetando");
         this.transform.position = ultimoPuntoSpawn.transform.position;
         miRigidbody.velocity = Vector3.zero;
         ResetearEscenario();

@@ -61,16 +61,7 @@ public class AtaqueManzana : MonoBehaviour {
             float escalaX = this.transform.localScale.x;
             Vector3 vectorLanzamiento = new Vector3(1 * escalaX * fuerzaDisparo, 5);
             nuevaManzana.AddForce(vectorLanzamiento, ForceMode2D.Impulse);
-            Invoke("DestruirManzana", 3);
         }
 
     }
-    private void DestruirManzana()
-    {
-        if (nuevaManzana != null)
-        {
-            Destroy(nuevaManzana.gameObject);
-        }
-    }
-
 }

@@ -9,7 +9,7 @@ public class JugadorNadar : MonoBehaviour {
 
     [SerializeField] LayerMask capaAgua;
 
-    [SerializeField] Vector3 posicionCabeza;
+    [SerializeField] Transform posicionCabeza;
     [SerializeField] float radioCabeza;
 
     Rigidbody2D miRigidbody;
@@ -24,6 +24,7 @@ public class JugadorNadar : MonoBehaviour {
     private void OnEnable()
     {
         miAnimator.SetBool("enAgua", true);
+        Debug.Log("EN EL AGUA");
     }
 
     private void OnDisable()
@@ -33,6 +34,8 @@ public class JugadorNadar : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        Debug.Log("EN EL AGUA");
+
         float xInput = Input.GetAxis("Horizontal");
         miRigidbody.AddForce(Vector2.right * fuerzaLateral * xInput);
 
@@ -56,7 +59,7 @@ public class JugadorNadar : MonoBehaviour {
 
     public bool EstoySumergido()
     {
-        Vector3 posicionCabezaGlobal = transform.TransformPoint(posicionCabeza);
+        Vector3 posicionCabezaGlobal = posicionCabeza.position;
         Collider2D agua = Physics2D.OverlapCircle(posicionCabezaGlobal, radioCabeza, capaAgua);
 
         return (agua != null);

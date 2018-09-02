@@ -4,8 +4,6 @@ using UnityEngine;
 using DG.Tweening;
 
 public class EnemigoAereo : Enemigo {
-    enum Estado { Idle, ToRight, ToLeft };
-    private Estado estado = Estado.Idle;
     private bool vivo = true;
     [SerializeField] int speed = 1;
     [SerializeField] int distance = 20;
@@ -13,7 +11,6 @@ public class EnemigoAereo : Enemigo {
     Tween tweenOscilar;
     // Use this for initialization
     void Start () {
-        estado = Estado.ToRight;
         transform.localScale = new Vector3(-1, 1, 1);
         tweenOscilar = this.transform.DOMoveY(0.3f, 0.5f).SetLoops(-1,LoopType.Yoyo).SetRelative().SetEase(Ease.InOutSine);
     }
@@ -36,13 +33,8 @@ public class EnemigoAereo : Enemigo {
         if (vivo)
         {
             vivo = false;
-            ParticleSystem ps = Instantiate(prefabExplosion, this.transform.position, Quaternion.identity);
-            ps.Play();
-            AudioSource bang = GetComponent<AudioSource>();
-            bang.Play();
             base.Morir();
             tweenOscilar.Kill();
-            Destroy(ps.gameObject);
         }
     }
 }
