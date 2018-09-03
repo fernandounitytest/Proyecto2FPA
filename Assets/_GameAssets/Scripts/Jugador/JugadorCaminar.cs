@@ -62,7 +62,7 @@ public class JugadorCaminar : MonoBehaviour {
     {
         if (empujado) { return; }
         float xInput = Input.GetAxis("Horizontal");
-        if ((xInput > 0 || xInput < 0) && (enSuelo))
+        if ((xInput > 0 || xInput < 0))
         {
             if (xInput > 0)
             {
@@ -136,9 +136,11 @@ public class JugadorCaminar : MonoBehaviour {
         if (colision != null)
         {
             Enemigo enemigo = colision.GetComponent<Enemigo>();
-            enemigo.RecibirDaño();
-
-            Saltar();
+            if (enemigo.EstaVivo)
+            {
+                enemigo.RecibirDaño();
+                Saltar();
+            }
         }
     }
 

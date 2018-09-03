@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Meta : MonoBehaviour {
+public class MetaParcial : MonoBehaviour {
     [SerializeField] public ParticleSystem prefabExplosion;
     [SerializeField] GameObject deathStar;
     // Use this for initialization
@@ -33,6 +33,6 @@ public class Meta : MonoBehaviour {
     }
     public void Final()
     {
-        SceneManager.LoadScene("VictoriaScene");
+        SceneManager.LoadScene("GameScene2");
     }
 }

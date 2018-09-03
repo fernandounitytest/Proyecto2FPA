@@ -17,7 +17,7 @@ public class MenuScript : MonoBehaviour {
 
     public void EmpezarJuego()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameScene1");
     }
 
     public void Salir()

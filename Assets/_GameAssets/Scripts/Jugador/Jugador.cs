@@ -89,8 +89,6 @@ public class Jugador : Personaje {
 
     private void CrearCheckpointInicial()
     {
-        //GameObject checkPointInicial = new GameObject("Checkpoint Inicial");
-        //checkPointInicial.transform.position = this.transform.position;
         UltimoPuntoSpawn = this.transform;
     }
 
@@ -113,7 +111,6 @@ public class Jugador : Personaje {
 
     void ResetearEnUltimoPuntoSpawn()
     {
-        Debug.Log("resetando");
         this.transform.position = ultimoPuntoSpawn.transform.position;
         miRigidbody.velocity = Vector3.zero;
         ResetearEscenario();
@@ -140,11 +137,7 @@ public class Jugador : Personaje {
 
     public void RecibirEmpujon(Vector3 desdePosicion)
     {
-
         if (inmunidadTemporal) { return; }
-
-        // FIXME: El empujon debería hacerse según el tipo de movimiento
-        // que esté activo en cada momento.
         miMovimientoCaminar.RecibirEmpujon(desdePosicion);
     }
 
